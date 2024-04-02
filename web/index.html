@@ -21,9 +21,9 @@
 
 	<!-- ICON
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="static/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon-16x16.png">
 
 	<!-- CSS
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -35,16 +35,15 @@
 	<!-- Title
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<hr>
-	<div>
-		<p class="text-5xl font-bold underline">GO.NASA</p>
+	<div class="content-center">
+		<p class="text-5xl font-bold text-center">GO.NASA</p>
 	</div>
 	<hr>
 
 	<!-- Form
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<div class="container">
-		<div class="row">
-			<form method="post" action="/" id="">
+	<div class="container mx-auto">
+			<form method="post" action="/" id="form">
                 
                 <div class="row">
                     
@@ -64,18 +63,20 @@
                     <label for="date">Date</label>
                     <input name="date" id="date" type="text" placeholder="YYYY-MM-DD">
 
-                    <label for="cloud_score">Cloud Score</label>
-                    <input name="cloud_score" id="cloud_score" type="checkbox">
+                    
                     
 				</div>
 
-				<!-- Submit -->
                 <div class="row">
+
+                    <label for="cloud_score">Cloud Score</label>
+                    <input name="cloud_score" id="cloud_score" type="checkbox">
+
 				    <input id="submit" type="submit" value="Submit">
+
                 </div>
 			
             </form>
-		</div>
 	</div>
 </body>
 
